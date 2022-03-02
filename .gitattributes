@@ -1,2 +1,3 @@
 *.sql diff
 *.pdf diff
+*.docx diff
