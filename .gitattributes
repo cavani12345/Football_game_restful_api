@@ -2,3 +2,4 @@
 *.xsl diff=excel
 *.xlsx diff=zip
 *.docx diff=zip
+*.sql text working-tree-encoding=UTF-8
