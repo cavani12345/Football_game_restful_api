@@ -2,8 +2,9 @@ name: GitHub Actions Demo
 on: [push]
 jobs:
   Explore-GitHub-Actions:
-    runs-on: ubuntu-latest
-    steps:
+  runs-on: ubuntu-latest
+  
+  steps:
       - id: First step
        name: First step
        run: echo " this is the first github action "
