@@ -4,9 +4,13 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - name: First step
       - run: echo " this is the first github action "
+
       - name: checking out the repository
         uses: actions/checkout@v2
+
+      - name: Listing all available file
         run: ls ${{ github.workspace }} 
       - run: echo "🍏 This job's status is ${{ job.status }}."
      
