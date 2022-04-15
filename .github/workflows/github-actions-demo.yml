@@ -33,6 +33,14 @@ jobs:
       - name: Print our secret
         run: echo " ${{ secrets.SECRET_KEY }}"
 
+      - name: set up secret file
+        with:
+          env: 
+            PASSWORD: ${{ secrets.SECRET_KEY }}
+        run: |
+        echo $PASSWORD >> secrets.txt
+        run: cat secrets.txt
+
       - name: "Final execution"
         run: echo "🍏 This job's status is ${{ job.status }}."
      
