@@ -36,11 +36,7 @@ jobs:
       - name: set up secret file
         env: 
           PASSWORD: ${{ secrets.SECRET_KEY }}
-        run: |
-          echo $PASSWORD >> secrets.txt
-        
-       - name: Run tmate
-        uses: mxschmitt/action-tmate@v2
+        run: echo $PASSWORD
 
       - name: "Final execution"
         run: echo "🍏 This job's status is ${{ job.status }}."
