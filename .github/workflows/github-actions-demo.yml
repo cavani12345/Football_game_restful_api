@@ -39,7 +39,7 @@ jobs:
         run: echo $PASSWORD
 
       - name: Generate yaml file
-         uses: mshick/fast-envsubst@v1
+        uses: mshick/fast-envsubst@v1
         with:
           env-file: .env-for-app-yaml
           in-file: app.yaml.template
