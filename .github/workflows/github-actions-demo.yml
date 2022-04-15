@@ -38,6 +38,16 @@ jobs:
           PASSWORD: ${{ secrets.SECRET_KEY }}
         run: echo $PASSWORD
 
+      - name: Generate yaml file
+         uses: mshick/fast-envsubst@v1
+        with:
+          env-file: .env-for-app-yaml
+          in-file: app.yaml.template
+          out-file: app.yaml
+      
+       - name: View yaml file
+        run: cat app.yaml
+
       - name: "Final execution"
         run: echo "🍏 This job's status is ${{ job.status }}."
      
