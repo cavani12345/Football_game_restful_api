@@ -42,7 +42,7 @@ jobs:
         uses: mshick/fast-envsubst@v1
         with:
           env-file: football_game/.env
-          in-file: app.yaml.template
+          in-file: app.yaml
           out-file: app.yaml
 
       - name: "Final execution"
