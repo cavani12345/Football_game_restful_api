@@ -45,7 +45,7 @@ jobs:
           in-file: app.yaml.template
           out-file: app.yaml
       
-       - name: View yaml file
+      - name: View yaml file
         run: cat app.yaml
 
       - name: "Final execution"
