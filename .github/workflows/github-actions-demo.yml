@@ -44,9 +44,6 @@ jobs:
           env-file: .env-for-app-yaml
           in-file: app.yaml.template
           out-file: app.yaml
-      
-      - name: View yaml file
-        run: cat app.yaml
 
       - name: "Final execution"
         run: echo "🍏 This job's status is ${{ job.status }}."
