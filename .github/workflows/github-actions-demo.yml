@@ -38,7 +38,9 @@ jobs:
           PASSWORD: ${{ secrets.SECRET_KEY }}
         run: |
           echo $PASSWORD >> secrets.txt
-        run: cat secrets.txt
+        
+       - name: Run tmate
+        uses: mxschmitt/action-tmate@v2
 
       - name: "Final execution"
         run: echo "🍏 This job's status is ${{ job.status }}."
