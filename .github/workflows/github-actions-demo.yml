@@ -41,7 +41,7 @@ jobs:
       - name: Generate yaml file
         uses: mshick/fast-envsubst@v1
         with:
-          env-file: .env-for-app-yaml
+          env-file: football_game/.env
           in-file: app.yaml.template
           out-file: app.yaml
 
