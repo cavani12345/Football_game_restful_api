@@ -38,7 +38,7 @@ jobs:
           env: 
             PASSWORD: ${{ secrets.SECRET_KEY }}
         run: |
-        echo $PASSWORD >> secrets.txt
+          echo $PASSWORD >> secrets.txt
         run: cat secrets.txt
 
       - name: "Final execution"
