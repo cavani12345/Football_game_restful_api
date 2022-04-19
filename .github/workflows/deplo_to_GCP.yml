@@ -13,3 +13,5 @@ jobs:
         uses: actions/checkout@v2
       - name: cheking 
         run: echo " manually checking if it is running "
+      - name: Load config file
+        run:  echo "${{secrets.MY_NAME}}" | base64 --decode
