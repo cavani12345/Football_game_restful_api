@@ -1,0 +1,14 @@
+name: Deploy Application to GAE
+on: 
+  pull_request:
+    types:
+      - closed
+jobs:
+  if_merged:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+      - name: cheking 
+        run: echo " manually checking if it is running "
